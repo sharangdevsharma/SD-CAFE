@@ -1,0 +1,140 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{font-size: 20px;
+overflow: hidden;
+color: whitesmoke;
+font-family: 'Flamenco', cursive;
+}
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/cake.jpg');
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+  height: 100vh;
+}
+
+  
+
+.row{
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+.main-nav{
+  float: right;
+  margin-top:70px;
+  margin-left: 100px;
+}
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+   margin-left: 40px;
+}
+.main-nav li a{
+  padding: 5px 0;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: 100;
+}
+.main-nav li a:hover{
+border-bottom: 2px solid #d2691e;
+}
+
+.main-content-header{
+  width: 1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+transform:translate(-50%, -50%);
+}
+h1{
+  color: whitesmoke;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+ text-transform: uppercase;
+ font-weight: lighter;
+
+}
+.btn{
+  display:inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration:none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full{
+  background-color: transparent;
+  color: rgb(167, 17, 17);
+  margin-right: 15px;
+  border: 1px solid rgb(120, 250, 120);
+
+}
+.btn-full:hover{
+  background-color: rgb(165, 255, 153);
+}
+
+.btn-nav
+{
+  background-color: transparent;
+  color: rgb(120, 250, 120);
+  border: 1px solid rgb(167, 17, 17);
+}
+ .btn-nav:hover{
+  background-color: rgb(167, 17, 17);
+ }
+.rangeen{
+  animation: rangeen 1s infinite;
+
+}
+@keyframes rangeen{
+  0%{color: rgb(120, 250, 120);}
+  25%{color: rgb(167, 17, 17);}
+  50%{color: chocolate;}
+  75%{color:rgb(167, 17, 17)}
+ 100%{color: rgb(120, 250, 120);}
+}
+.mobile-icone{display: none;}
+
+@media only  screen and ( max-width:1180px){
+  .main-content-header{
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only  screen and ( max-width:998px){
+h1{
+  font-size: 200%;
+}
+}
+@media only  screen and ( max-width:768px){
+  h1{font-size: 180%;}
+  .main-nav{display: none;}
+  .mobile-icone{display: inline-block;
+    color: #f5f5f5; 
+    float: right; 
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+ .main-nav{float: left;}
+  
+  .main-nav li{
+  
+    display: block;
+    margin-top: 10px;
+  }
+
+
+}
+ 
